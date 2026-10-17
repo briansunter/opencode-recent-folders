@@ -1,0 +1,40 @@
+{
+  "name": "opencode-recent-folders",
+  "version": "0.1.0",
+  "description": "OpenCode 2.0 TUI plugin: pick a recently opened folder (favorites pinned on top, grouped by day) and switch OpenCode to it to start a new session there.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briansunter/opencode-recent-folders.git"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "folders",
+    "projects",
+    "tui"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.tsx"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.8",
+    "@opentui/solid": ">=0.5.8",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/client": "2.0.30",
+    "@opencode/plugin": "2.0.30",
+    "@opentui/core": ">=0.5.8",
+    "@opentui/solid": ">=0.5.8",
+    "@types/node": "^26.6.5",
+    "solid-js": ">=1.9.0",
+    "typescript": "^7.0.2"
+  }
+}
